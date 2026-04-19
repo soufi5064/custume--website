@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs & Careers | Rebel Town RP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rebel: {
+                            accent: '#0B0FD4',
+                            'accent-dark': '#080ca3',
+                            blue: '#3b82f6',
+                            'blue-dark': '#2563eb',
+                            dark: '#0f172a',
+                            darker: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rebel-darker text-slate-200 selection:bg-rebel-accent selection:text-white">
+
+    <div class="page-transition page-blur-in active">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 glass-blur border-b border-white/5 py-4 transition-all duration-300">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="../index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-rebel-accent rounded-lg flex items-center justify-center accent-glow transition-all">
+                        <i data-lucide="zap" class="text-white w-6 h-6"></i>
+                    </div>
+                    <span class="text-2xl font-heading font-bold tracking-wider text-white uppercase">REBEL <span class="text-rebel-accent">TOWN</span></span>
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-[0.2em]">
+                    <a href="../index.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-ar">الرئيسية</span>
+                    </a>
+                    <a href="about.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">About</span>
+                        <span class="lang-ar">من نحن</span>
+                    </a>
+                    <a href="how-to-join.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Join</span>
+                        <span class="lang-ar">انضم الآن</span>
+                    </a>
+                    <a href="rules.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Rules</span>
+                        <span class="lang-ar">القوانين</span>
+                    </a>
+                    <a href="careers.html" class="text-rebel-accent">
+                        <span class="lang-en">Careers</span>
+                        <span class="lang-ar">الوظائف</span>
+                    </a>
+                    <a href="lore.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Lore</span>
+                        <span class="lang-ar">القصة</span>
+                    </a>
+                    <a href="store.html" class="text-rebel-blue hover:text-rebel-blue-dark transition-colors">
+                        <span class="lang-en">Store</span>
+                        <span class="lang-ar">المتجر</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="lang-dropdown-container">
+                        <div class="lang-current text-white">
+                            <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="English">
+                            <span>English</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500"></i>
+                        </div>
+                        <div class="lang-list">
+                            <div class="lang-option" data-lang="en">
+                                <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="English">
+                                <span class="text-xs font-bold text-white uppercase">English</span>
+                            </div>
+                            <div class="lang-option" data-lang="ar">
+                                <img src="https://flagcdn.com/w20/sa.png" class="flag-icon" alt="Arabic">
+                                <span class="text-xs font-bold text-white uppercase tracking-wider">العربية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/rebeltown" target="_blank" class="bg-rebel-blue hover:bg-rebel-blue-dark text-white px-6 py-2.5 rounded-xl font-black transition-all blue-glow flex items-center gap-2 uppercase text-[12px] tracking-widest btn-transition">
+                        <i data-lucide="message-square" class="w-4 h-4"></i> 
+                        <span class="lang-en">Discord</span>
+                        <span class="lang-ar">ديسكورد</span>
+                    </a>
+                    <button class="mobile-menu-btn lg:hidden text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Section -->
+        <header class="pt-40 pb-20 bg-grid relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-rebel-darker via-transparent to-rebel-darker"></div>
+            <div class="absolute top-1/4 -left-20 w-96 h-96 bg-rebel-accent/10 blur-[100px] rounded-full"></div>
+            <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-rebel-blue/10 blur-[100px] rounded-full"></div>
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-heading font-black text-white mb-6 uppercase tracking-tighter">
+                    <span class="lang-en">JOBS & <span class="text-rebel-accent italic">CAREERS</span></span>
+                    <span class="lang-ar">الوظائف و <span class="text-rebel-accent italic">المهن</span></span>
+                </h1>
+                <p class="text-slate-400 max-w-2xl mx-auto uppercase tracking-widest text-[10px] font-bold">
+                    <span class="lang-en">Choose your path and build your empire</span>
+                    <span class="lang-ar">اختر طريقك وابنِ إمبراطوريتك</span>
+                </p>
+            </div>
+        </header>
+
+        <!-- Careers Content -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Legal Jobs -->
+                    <div class="reveal-left">
+                        <div class="flex items-center gap-4 mb-10">
+                            <div class="p-3 bg-rebel-blue rounded-xl">
+                                <i data-lucide="shield-check" class="text-white w-8 h-8"></i>
+                            </div>
+                            <h2 class="text-4xl font-heading font-black text-white uppercase tracking-tighter">
+                                <span class="lang-en">Legal <span class="text-rebel-blue italic">Careers</span></span>
+                                <span class="lang-ar">وظائف <span class="text-rebel-blue italic">قانونية</span></span>
+                            </h2>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-blue/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Police <span class="text-rebel-blue not-italic">Department</span></span>
+                                    <span class="lang-ar">قسم <span class="text-rebel-blue not-italic">الشرطة</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Protect and serve the citizens of Rebel Town. Access to custom police vehicles, advanced MDT systems, and a promotion-based rank structure.</span>
+                                    <span class="lang-ar">احمِ واخدم مواطني ريبل تاون. دخول لمركبات الشرطة المخصصة، وأنظمة متطورة، وهيكل رتب يعتمد على الترقية.</span>
+                                </p>
+                                <a href="https://discord.gg/rebeltown" class="inline-flex items-center gap-2 text-rebel-blue font-black uppercase text-[10px] tracking-widest hover:gap-4 transition-all">
+                                    <span class="lang-en">Apply Now</span>
+                                    <span class="lang-ar">قدم الآن</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-blue/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">EMS & <span class="text-rebel-blue not-italic">Medical</span></span>
+                                    <span class="lang-ar">الإسعاف و <span class="text-rebel-blue not-italic">الطب</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Our advanced medical system brings realism to roleplay. Save lives, use realistic medical tools, and operate emergency response vehicles.</span>
+                                    <span class="lang-ar">نظامنا الطبي المتطور يضيف واقعية للحياة الواقعية. أنقذ الأرواح، استخدم أدوات طبية واقعية، وقد مركبات الطوارئ.</span>
+                                </p>
+                                <a href="https://discord.gg/rebeltown" class="inline-flex items-center gap-2 text-rebel-blue font-black uppercase text-[10px] tracking-widest hover:gap-4 transition-all">
+                                    <span class="lang-en">Join the Team</span>
+                                    <span class="lang-ar">انضم للفريق</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-blue/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Mechanic <span class="text-rebel-blue not-italic">Shop</span></span>
+                                    <span class="lang-ar">ورشة <span class="text-rebel-blue not-italic">الميكانيك</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Keep the city's vehicles in top shape. Custom tuning, repairs, and towing services. Build your own mechanic empire.</span>
+                                    <span class="lang-ar">حافظ على مركبات المدينة في أفضل حالة. تعديل مخصص، إصلاحات، وخدمات سحب. ابنِ إمبراطوريتك الميكانيكية الخاصة.</span>
+                                </p>
+                            </div>
+                            
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-blue/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Economy <span class="text-rebel-blue not-italic">Jobs</span></span>
+                                    <span class="lang-ar">وظائف <span class="text-rebel-blue not-italic">الاقتصاد</span></span>
+                                </h3>
+                                <ul class="text-slate-400 text-sm space-y-2">
+                                    <li>• <span class="lang-en">Taxi Driver</span><span class="lang-ar">سائق تاكسي</span></li>
+                                    <li>• <span class="lang-en">Truck Driver</span><span class="lang-ar">سائق شاحنة</span></li>
+                                    <li>• <span class="lang-en">Business Owner</span><span class="lang-ar">صاحب عمل</span></li>
+                                    <li>• <span class="lang-en">Real Estate Agent</span><span class="lang-ar">وكيل عقارات</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Illegal Activities -->
+                    <div class="reveal-right">
+                        <div class="flex items-center gap-4 mb-10">
+                            <div class="p-3 bg-rebel-accent rounded-xl">
+                                <i data-lucide="skull" class="text-white w-8 h-8"></i>
+                            </div>
+                            <h2 class="text-4xl font-heading font-black text-white uppercase tracking-tighter">
+                                <span class="lang-en">Illegal <span class="text-rebel-accent italic">Life</span></span>
+                                <span class="lang-ar">حياة <span class="text-rebel-accent italic">العصابات</span></span>
+                            </h2>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-accent/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Gangs & <span class="text-rebel-accent not-italic">Mafias</span></span>
+                                    <span class="lang-ar">العصابات و <span class="text-rebel-accent not-italic">المافيا</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Create or join powerful organizations. Access to custom gang systems, turf control, unique headquarters, and gang wars.</span>
+                                    <span class="lang-ar">أنشئ أو انضم إلى منظمات قوية. دخول لأنظمة العصابات المخصصة، والسيطرة على المناطق، والمقرات الفريدة، وحروب العصابات.</span>
+                                </p>
+                                <p class="text-slate-500 text-[10px] uppercase font-bold tracking-widest italic">
+                                    <span class="lang-en">Dominate the streets or build alliances.</span>
+                                    <span class="lang-ar">سيطر على الشوارع أو ابنِ تحالفات.</span>
+                                </p>
+                            </div>
+
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-accent/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Drug <span class="text-rebel-accent not-italic">Production</span></span>
+                                    <span class="lang-ar">إنتاج <span class="text-rebel-accent not-italic">الممنوعات</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Build labs, produce illegal substances, and control the market prices. High risk, high reward lifestyle.</span>
+                                    <span class="lang-ar">ابنِ المعامل، أنتج المواد الممنوعة، وسيطر على أسعار السوق. مخاطرة عالية، مكاسب عالية.</span>
+                                </p>
+                            </div>
+
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-accent/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Robberies & <span class="text-rebel-accent not-italic">Heists</span></span>
+                                    <span class="lang-ar">السطو و <span class="text-rebel-accent not-italic">السرقات</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Plan and execute high-stakes robberies. From local stores to the Pacific Standard Bank, the choice is yours.</span>
+                                    <span class="lang-ar">خطط ونفذ عمليات سطو عالية الخطورة. من المتاجر المحلية إلى البنك المركزي، الخيار لك.</span>
+                                </p>
+                            </div>
+
+                            <div class="p-8 rounded-3xl glass-card border-white/10 hover:border-rebel-accent/30 transition-all hover-lift">
+                                <h3 class="text-xl font-heading font-bold text-white uppercase mb-3 italic">
+                                    <span class="lang-en">Black <span class="text-rebel-accent not-italic">Market</span></span>
+                                    <span class="lang-ar">السوق <span class="text-rebel-accent not-italic">السوداء</span></span>
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <span class="lang-en">Access exclusive illegal items, weapons trading, and underground manufacturing systems.</span>
+                                    <span class="lang-ar">دخول حصري للعناصر الممنوعة، تجارة الأسلحة، وأنظمة التصنيع السرية.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-rebel-darker border-t border-white/5 pt-20 pb-10">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+                    © 2026 Rebel Town Roleplay — All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebel Town RP | FiveM Server</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rebel: {
+                            accent: '#0B0FD4',
+                            'accent-dark': '#080ca3',
+                            blue: '#3b82f6',
+                            'blue-dark': '#2563eb',
+                            dark: '#0f172a',
+                            darker: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rebel-darker text-slate-200 selection:bg-rebel-accent selection:text-white">
+
+    <div class="page-transition page-blur-in active">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 glass-blur border-b border-white/5 py-4 transition-all duration-300">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-rebel-accent rounded-lg flex items-center justify-center accent-glow transition-all">
+                        <i data-lucide="zap" class="text-white w-6 h-6"></i>
+                    </div>
+                    <span class="text-2xl font-heading font-bold tracking-wider text-white uppercase">REBEL <span class="text-rebel-accent">TOWN</span></span>
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-[0.2em]">
+                    <a href="index.html" class="text-rebel-accent">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-ar">الرئيسية</span>
+                    </a>
+                    <a href="pages/about.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">About</span>
+                        <span class="lang-ar">من نحن</span>
+                    </a>
+                    <a href="pages/how-to-join.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Join</span>
+                        <span class="lang-ar">انضم الآن</span>
+                    </a>
+                    <a href="pages/rules.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Rules</span>
+                        <span class="lang-ar">القوانين</span>
+                    </a>
+                    <a href="pages/careers.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Careers</span>
+                        <span class="lang-ar">الوظائف</span>
+                    </a>
+                    <a href="pages/lore.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Lore</span>
+                        <span class="lang-ar">القصة</span>
+                    </a>
+                    <a href="pages/store.html" class="text-rebel-blue hover:text-rebel-blue-dark transition-colors">
+                        <span class="lang-en">Store</span>
+                        <span class="lang-ar">المتجر</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="lang-dropdown-container">
+                        <div class="lang-current text-white">
+                            <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="English">
+                            <span>English</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500"></i>
+                        </div>
+                        <div class="lang-list">
+                            <div class="lang-option" data-lang="en">
+                                <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="English">
+                                <span class="text-xs font-bold text-white uppercase">English</span>
+                            </div>
+                            <div class="lang-option" data-lang="ar">
+                                <img src="https://flagcdn.com/w20/sa.png" class="flag-icon" alt="Arabic">
+                                <span class="text-xs font-bold text-white uppercase tracking-wider">العربية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/rebeltown" target="_blank" class="bg-rebel-blue hover:bg-rebel-blue-dark text-white px-6 py-2.5 rounded-xl font-black transition-all blue-glow flex items-center gap-2 uppercase text-[12px] tracking-widest btn-transition">
+                        <i data-lucide="message-square" class="w-4 h-4"></i> 
+                        <span class="lang-en">Discord</span>
+                        <span class="lang-ar">ديسكورد</span>
+                    </a>
+                    <button class="mobile-menu-btn lg:hidden text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-grid">
+            <div class="absolute inset-0 bg-gradient-to-b from-rebel-darker via-transparent to-rebel-darker"></div>
+            <div class="absolute top-1/4 -left-20 w-96 h-96 bg-rebel-accent/10 blur-[100px] rounded-full"></div>
+            <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-rebel-blue/10 blur-[100px] rounded-full"></div>
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-rebel-accent text-[10px] font-bold uppercase tracking-[0.2em] mb-8 animate-bounce">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rebel-accent opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-rebel-accent"></span>
+                        </span>
+                        <span class="lang-en">Join the Elite Roleplay Experience</span>
+                        <span class="lang-ar">انضم إلى تجربة الحياة الواقعية النخبة</span>
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-8xl font-heading font-black text-white mb-6 leading-tight uppercase reveal stagger-1">
+                        <span class="lang-en">BUILD YOUR <span class="text-gradient-accent italic">LEGACY</span></span>
+                        <span class="lang-ar">ابنِ <span class="text-gradient-accent italic">إرثك</span> الخاص</span>
+                    </h1>
+                    
+                    <p class="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto reveal stagger-2">
+                        <span class="lang-en">Welcome to Rebel Town Roleplay, a next-generation FiveM experience where realism meets freedom. Shape the city your way.</span>
+                        <span class="lang-ar">أهلاً بك في ريبل تاون، تجربة الحياة الواقعية الأحدث في فايف إم حيث تجتمع الواقعية مع الحرية. ابنِ مستقبلك بطريقتك الخاصة.</span>
+                    </p>
+
+                    <div class="flex flex-wrap justify-center gap-6 reveal stagger-3">
+                        <a href="pages/how-to-join.html" class="group relative px-10 py-4 bg-rebel-accent rounded-xl font-black text-white uppercase tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95 btn-transition">
+                            <span class="relative z-10 flex items-center gap-2">
+                                <span class="lang-en">Start Journey</span>
+                                <span class="lang-ar">العب الآن</span>
+                                <i data-lucide="play" class="w-5 h-5 fill-current"></i>
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-rebel-accent-dark to-rebel-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </a>
+                        
+                        <a href="pages/about.html" class="px-10 py-4 border-2 border-white/10 hover:border-rebel-blue/50 rounded-xl font-black text-white uppercase tracking-widest transition-all hover:bg-rebel-blue/10 flex items-center gap-2 btn-transition">
+                            <span class="lang-en">Learn More</span>
+                            <span class="lang-ar">عرض المزيد</span>
+                            <i data-lucide="info" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+
+                    <!-- Stats/Features -->
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-20 reveal stagger-4">
+                        <div class="flex flex-col items-center gap-2 p-6 rounded-2xl glass-card border-white/5 hover:border-rebel-accent/30 transition-all group hover-lift">
+                            <i data-lucide="code-2" class="text-rebel-accent w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[9px] uppercase font-black tracking-widest text-slate-400 group-hover:text-white transition-colors">
+                                <span class="lang-en">Custom scripts</span>
+                                <span class="lang-ar">سكربتات خاصة</span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 p-6 rounded-2xl glass-card border-white/5 hover:border-rebel-accent/30 transition-all group hover-lift">
+                            <i data-lucide="briefcase" class="text-rebel-accent w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[9px] uppercase font-black tracking-widest text-slate-400 group-hover:text-white transition-colors">
+                                <span class="lang-en">Realistic jobs</span>
+                                <span class="lang-ar">وظائف واقعية</span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 p-6 rounded-2xl glass-card border-white/5 hover:border-rebel-accent/30 transition-all group hover-lift">
+                            <i data-lucide="users" class="text-rebel-accent w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[9px] uppercase font-black tracking-widest text-slate-400 group-hover:text-white transition-colors">
+                                <span class="lang-en">Active community</span>
+                                <span class="lang-ar">مجتمع نشط</span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 p-6 rounded-2xl glass-card border-white/5 hover:border-rebel-accent/30 transition-all group hover-lift">
+                            <i data-lucide="shield-check" class="text-rebel-accent w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[9px] uppercase font-black tracking-widest text-slate-400 group-hover:text-white transition-colors">
+                                <span class="lang-en">Professional staff</span>
+                                <span class="lang-ar">طاقم احترافي</span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 p-6 rounded-2xl glass-card border-white/5 hover:border-rebel-accent/30 transition-all group hover-lift">
+                            <i data-lucide="cpu" class="text-rebel-accent w-6 h-6 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-[9px] uppercase font-black tracking-widest text-slate-400 group-hover:text-white transition-colors">
+                                <span class="lang-en">Optimized</span>
+                                <span class="lang-ar">سيرفر مطور</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick About Section -->
+        <section class="py-32 bg-rebel-dark">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative group reveal-left">
+                        <div class="absolute -inset-4 bg-rebel-accent/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="relative aspect-video rounded-3xl overflow-hidden border border-white/10 glass-card flex items-center justify-center">
+                            <i data-lucide="clapperboard" class="w-20 h-20 text-rebel-accent/40 animate-pulse"></i>
+                        </div>
+                    </div>
+                    <div class="reveal-right">
+                        <h2 class="text-5xl font-heading font-black text-white mb-6 uppercase tracking-tighter">
+                            <span class="lang-en"></span>EXPERIENCE <span class="text-rebel-accent italic">REEL</span> LIFE</span>
+                            <span class="lang-ar">عِش الحياة <span class="text-rebel-accent italic">الواقعية</span></span>
+                        </h2>
+                        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                            <span class="lang-en">Whether you become a respected police officer, a powerful business owner, or a feared gang leader — Rebel Town gives you endless opportunities. Every player matters, and every story counts.</span>
+                            <span class="lang-ar">سواء كنت تريد أن تصبح ضابط شرطة محترم، أو صاحب عمل قوي، أو زعيم عصابة مهاب — ريبل تاون تمنحك فرصاً لا حصر لها. كل لاعب له أهميته، وكل قصة لها وزنها.</span>
+                        </p>
+                        <a href="pages/lore.html" class="inline-flex items-center gap-2 text-rebel-accent font-black uppercase tracking-widest hover:gap-4 transition-all">
+                            <span class="lang-en">Discover our Lore</span>
+                            <span class="lang-ar">اكتشف قصتنا</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-rebel-darker border-t border-white/5 pt-20 pb-10">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-12 mb-20">
+                    <div class="col-span-2">
+                        <div class="flex items-center gap-2 mb-6">
+                            <div class="w-8 h-8 bg-rebel-accent rounded flex items-center justify-center">
+                                <i data-lucide="zap" class="text-white w-5 h-5"></i>
+                            </div>
+                            <span class="text-xl font-heading font-bold tracking-wider text-white uppercase">REBEL <span class="text-rebel-accent">TOWN</span></span>
+                        </div>
+                        <p class="text-slate-500 text-sm max-w-sm mb-6">
+                            <span class="lang-en">© 2026 Rebel Town Roleplay — All Rights Reserved. Powered by FiveM & QBCore Framework.</span>
+                            <span class="lang-ar">© 2026 ريبل تاون — جميع الحقوق محفوظة. مدعوم بواسطة فايف إم.</span>
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-rebel-accent hover:text-white transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-rebel-accent hover:text-white transition-all"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                            <a href="https://discord.gg/rebeltown" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-rebel-accent hover:text-white transition-all"><i data-lucide="message-square" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-white font-bold uppercase text-[10px] tracking-[0.3em] mb-6">
+                            <span class="lang-en">Explore</span>
+                            <span class="lang-ar">استكشف</span>
+                        </h4>
+                        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                            <li><a href="index.html" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">Home</span>
+                                <span class="lang-ar">الرئيسية</span>
+                            </a></li>
+                            <li><a href="pages/about.html" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">About</span>
+                                <span class="lang-ar">من نحن</span>
+                            </a></li>
+                            <li><a href="pages/rules.html" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">Rules</span>
+                                <span class="lang-ar">القوانين</span>
+                            </a></li>
+                            <li><a href="pages/careers.html" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">Careers</span>
+                                <span class="lang-ar">الوظائف</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-bold uppercase text-[10px] tracking-[0.3em] mb-6">
+                            <span class="lang-en">Support</span>
+                            <span class="lang-ar">الدعم</span>
+                        </h4>
+                        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                            <li><a href="https://discord.gg/rebeltown" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">Discord Support</span>
+                                <span class="lang-ar">دعم الديسكورد</span>
+                            </a></li>
+                            <li><a href="pages/how-to-join.html" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">How to Join</span>
+                                <span class="lang-ar">طريقة الانضمام</span>
+                            </a></li>
+                            <li><a href="pages/store.html" class="hover:text-rebel-accent transition-colors">
+                                <span class="lang-en">Store</span>
+                                <span class="lang-ar">المتجر</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

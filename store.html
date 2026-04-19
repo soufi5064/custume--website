@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | Rebel Town Roleplay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rebel-accent': '#0B0FD4',
+                        'rebel-accent-dark': '#080ca3',
+                        'rebel-blue': '#080ca3',
+                        'rebel-blue-dark': '#080ca3',
+                        'rebel-dark': '#0f172a',
+                        'rebel-darker': '#020617',
+                    },
+                    fontFamily: {
+                        'heading': ['Rajdhani', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rebel-darker">
+    <div class="page-transition page-blur-in active">
+        <!-- Navigation -->
+        <nav class="fixed w-full z-50 transition-all duration-500 py-4 bg-rebel-darker/70 backdrop-blur-md border-b border-white/5">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="../index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-rebel-accent rounded-lg flex items-center justify-center accent-glow transition-all">
+                        <i data-lucide="zap" class="text-white w-6 h-6"></i>
+                    </div>
+                    <span class="text-2xl font-heading font-bold tracking-wider text-white uppercase">REBEL <span class="text-rebel-accent">TOWN</span></span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-[0.2em]">
+                    <a href="../index.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-ar">الرئيسية</span>
+                    </a>
+                    <a href="about.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">About</span>
+                        <span class="lang-ar">من نحن</span>
+                    </a>
+                    <a href="how-to-join.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Join</span>
+                        <span class="lang-ar">انضم الآن</span>
+                    </a>
+                    <a href="rules.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Rules</span>
+                        <span class="lang-ar">القوانين</span>
+                    </a>
+                    <a href="careers.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Careers</span>
+                        <span class="lang-ar">الوظائف</span>
+                    </a>
+                    <a href="lore.html" class="hover:text-rebel-accent transition-colors">
+                        <span class="lang-en">Lore</span>
+                        <span class="lang-ar">القصة</span>
+                    </a>
+                    <a href="store.html" class="text-rebel-accent">
+                        <span class="lang-en">Store</span>
+                        <span class="lang-ar">المتجر</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="lang-dropdown-container">
+                        <div class="lang-current text-white">
+                            <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="English">
+                            <span>English</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500"></i>
+                        </div>
+                        <div class="lang-list">
+                            <div class="lang-option" data-lang="en">
+                                <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="English">
+                                <span class="text-xs font-bold text-white uppercase">English</span>
+                            </div>
+                            <div class="lang-option" data-lang="ar">
+                                <img src="https://flagcdn.com/w20/sa.png" class="flag-icon" alt="Arabic">
+                                <span class="text-xs font-bold text-white uppercase tracking-wider">العربية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/rebeltown" target="_blank" class="bg-rebel-blue hover:bg-rebel-blue-dark text-white px-6 py-2.5 rounded-xl font-black transition-all blue-glow flex items-center gap-2 uppercase text-[12px] tracking-widest btn-transition">
+                        <i data-lucide="message-square" class="w-4 h-4"></i> 
+                        <span class="lang-en">Discord</span>
+                        <span class="lang-ar">ديسكورد</span>
+                    </a>
+                    <button class="mobile-menu-btn lg:hidden text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Section -->
+        <header class="pt-40 pb-20 bg-grid relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-rebel-darker via-transparent to-rebel-darker"></div>
+            <div class="absolute top-1/4 -left-20 w-96 h-96 bg-rebel-accent/10 blur-[100px] rounded-full"></div>
+            <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-rebel-blue/10 blur-[100px] rounded-full"></div>
+            
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-heading font-black text-white mb-6 uppercase tracking-tighter">
+                    <span class="lang-en">SERVER <span class="text-rebel-accent italic">STORE</span></span>
+                    <span class="lang-ar">متجر <span class="text-rebel-accent italic">السيرفر</span></span>
+                </h1>
+                <p class="text-slate-400 max-w-2xl mx-auto uppercase tracking-widest text-[10px] font-bold">
+                    <span class="lang-en">Support the community and unlock premium features</span>
+                    <span class="lang-ar">ادعم المجتمع واحصل على ميزات حصرية</span>
+                </p>
+            </div>
+        </header>
+
+        <!-- Store Categories -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- VIP Packages -->
+                    <div class="reveal-left">
+                        <div class="p-8 rounded-[2.5rem] glass-card border-white/10 hover:border-rebel-accent/30 transition-all hover-lift relative overflow-hidden group">
+                            <div class="absolute -top-10 -right-10 w-32 h-32 bg-rebel-accent/10 blur-3xl group-hover:bg-rebel-accent/20 transition-all"></div>
+                            <i data-lucide="crown" class="text-rebel-accent w-12 h-12 mb-6"></i>
+                            <h3 class="text-2xl font-heading font-bold text-white uppercase mb-4">
+                                <span class="lang-en">VIP Memberships</span>
+                                <span class="lang-ar">عضويات VIP</span>
+                            </h3>
+                            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                                <span class="lang-en">Get exclusive ranks, priority queue, and unique chat badges. Stand out in the community.</span>
+                                <span class="lang-ar">احصل على رتب حصرية، أولوية في الدخول، وشارات دردشة مميزة. كن مميزاً في المجتمع.</span>
+                            </p>
+                            <a href="https://rebeltown.tebex.io/category/vip" target="_blank" class="inline-flex items-center gap-2 text-rebel-accent font-black uppercase text-[10px] tracking-widest hover:gap-4 transition-all btn-transition">
+                                <span class="lang-en">View Packages</span>
+                                <span class="lang-ar">عرض الباقات</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Custom Vehicles -->
+                    <div class="reveal">
+                        <div class="p-8 rounded-[2.5rem] glass-card border-white/10 hover:border-rebel-blue/30 transition-all hover-lift relative overflow-hidden group">
+                            <div class="absolute -top-10 -right-10 w-32 h-32 bg-rebel-blue/10 blur-3xl group-hover:bg-rebel-blue/20 transition-all"></div>
+                            <i data-lucide="car" class="text-rebel-blue w-12 h-12 mb-6"></i>
+                            <h3 class="text-2xl font-heading font-bold text-white uppercase mb-4">
+                                <span class="lang-en">Custom Vehicles</span>
+                                <span class="lang-ar">سيارات مخصصة</span>
+                            </h3>
+                            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                                <span class="lang-en">Unlock access to high-performance imported cars and exclusive custom tuning options.</span>
+                                <span class="lang-ar">افتح الوصول إلى سيارات مستوردة عالية الأداء وخيارات تعديل حصرية.</span>
+                            </p>
+                            <a href="https://rebeltown.tebex.io/category/vehicles" target="_blank" class="inline-flex items-center gap-2 text-rebel-blue font-black uppercase text-[10px] tracking-widest hover:gap-4 transition-all btn-transition">
+                                <span class="lang-en">View Vehicles</span>
+                                <span class="lang-ar">عرض السيارات</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- In-Game Currency -->
+                    <div class="reveal-right">
+                        <div class="p-8 rounded-[2.5rem] glass-card border-white/10 hover:border-rebel-accent/30 transition-all hover-lift relative overflow-hidden group">
+                            <div class="absolute -top-10 -right-10 w-32 h-32 bg-rebel-accent/10 blur-3xl group-hover:bg-rebel-accent/20 transition-all"></div>
+                            <i data-lucide="coins" class="text-rebel-accent w-12 h-12 mb-6"></i>
+                            <h3 class="text-2xl font-heading font-bold text-white uppercase mb-4">
+                                <span class="lang-en">Server Support</span>
+                                <span class="lang-ar">دعم السيرفر</span>
+                            </h3>
+                            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                                <span class="lang-en">Help us keep the lights on and receive in-game rewards as a token of our appreciation.</span>
+                                <span class="lang-ar">ساعدنا في استمرار تشغيل السيرفر واحصل على مكافآت داخل اللعبة كعربون شكر.</span>
+                            </p>
+                            <a href="https://rebeltown.tebex.io/category/support" target="_blank" class="inline-flex items-center gap-2 text-rebel-accent font-black uppercase text-[10px] tracking-widest hover:gap-4 transition-all btn-transition">
+                                <span class="lang-en">Donate Now</span>
+                                <span class="lang-ar">تبرع الآن</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Store Notice -->
+                <div class="mt-20 p-10 rounded-[2.5rem] glass-card border-white/5 text-center reveal">
+                    <i data-lucide="shield-check" class="text-rebel-accent w-12 h-12 mx-auto mb-6"></i>
+                    <h2 class="text-3xl font-heading font-black text-white mb-4 uppercase italic">
+                        <span class="lang-en">Secure <span class="text-rebel-accent not-italic">Checkout</span></span>
+                        <span class="lang-ar">دفع <span class="text-rebel-accent not-italic">آمن</span></span>
+                    </h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                        <span class="lang-en">All transactions are handled securely via Tebex. Items are delivered instantly to your character in-game. If you have any issues, please open a ticket in our Discord.</span>
+                        <span class="lang-ar">تتم جميع المعاملات بشكل آمن عبر Tebex. يتم تسليم العناصر فوراً لشخصيتك داخل اللعبة. إذا واجهت أي مشكلة، يرجى فتح تذكرة في الديسكورد الخاص بنا.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-rebel-darker border-t border-white/5 pt-20 pb-10">
+            <div class="container mx-auto px-4 text-center">
+                <div class="flex items-center justify-center gap-2 mb-8">
+                    <div class="w-8 h-8 bg-rebel-accent rounded flex items-center justify-center">
+                        <i data-lucide="zap" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-heading font-bold tracking-wider text-white uppercase">REBEL <span class="text-rebel-accent">TOWN</span></span>
+                </div>
+                <p class="text-slate-500 text-sm mb-8">
+                    <span class="lang-en">© 2026 Rebel Town Roleplay. Not affiliated with Rockstar Games or Take-Two Interactive.</span>
+                    <span class="lang-ar">© 2026 ريبل تاون. غير تابع لشركة روكستار جيمز.</span>
+                </p>
+                <div class="flex justify-center gap-6">
+                    <a href="#" class="text-slate-500 hover:text-rebel-accent transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-slate-500 hover:text-rebel-accent transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    <a href="https://discord.gg/rebeltown" class="text-slate-500 hover:text-rebel-accent transition-colors"><i data-lucide="message-square" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
